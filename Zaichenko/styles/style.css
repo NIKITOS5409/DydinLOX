@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(235, 149, 213);
+}
+
+header {
+    background-color: rgb(236, 85, 178);
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-img{
+    width: 150px;
+    height: auto;
+    margin: 60px;
+}
+
+#korzina-img{
+    width: 150px;
+    height: auto;
+}
+
+#contacts-img{
+    width: 150px;
+    height: auto;
+}
+
+.header-inner ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    margin: 0 auto;
+    padding-left: 0;
+}
+
+.header-inner li {
+    margin: 30px;
+    font-size: 200%;
+}
+
+nav a {
+    color: rgb(255, 252, 254);
+    text-decoration: none;
+}
+
+.accountAndKorzina {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accountAndKorzina a {
+    padding: 30px;
+    border-radius: 50%;
+}
+
+.accountAndKorzina a:hover {
+    background-color: rgb(107, 7, 86);
+}
+
+.active {
+    background-color: rgb(107, 7, 86);
+    color: rgb(243, 62, 162);
+}
