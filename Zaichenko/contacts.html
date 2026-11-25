@@ -32,5 +32,68 @@
             </div>
         </div>
     </header>
+    <main class="site-content"> 
+        <h1>Наши контакты</h1>
+        <div class="contacts-layout">
+            <section class="contacts-grid">
+                <article class="contacts-card">
+                    <img src="icons/phone.png" alt="Телефон" class="contact-icon" aria-hidden="true">
+                    <h2>Телефон</h2>
+                    <a href="tel:78000000000" class="contact-value">+7 (800) 000-00-00</a>
+                    <button type="button" class="btn btn-small" id="copy-phone">Копировать номер</button>
+                </article>
+
+                <article class="contact-card">
+                    <img src="icons/email.png" alt="Почта" class="contact-icon" aria-hidden="true">
+                    <h2>Почта</h2>
+                    <a href="mailto:shop@example.ru" class="contact-value">shop@example.ru</a>
+                    <p class="contact-note"> Отвечаем в течении рабочего дня</p>
+                </article>
+
+                <article class="contact-card">
+                    <img src="icons/clock.png" alt="Режим работы" class="contact-icon" aria-hidden="true">
+                    <h2>Режим работы</h2>
+                    <p class="contact-value">Ежедневно с 9:00 до 20:00</p>
+                    <p class="work-status" id="work-status">Проверяем...</p>
+                </article>
+
+                <article class="contact-card">
+                    <img src="icons/map.png" alt="Адрес" class="contact-icon" aria-hidden="true">
+                    <h2>Адрес</h2>
+                    <p class="contact-value"> г. Хрючево, ул. Вонючая, д. 67</p>
+                    <p class="contact-note">2 минуты от сарая</p>
+                </article>
+            </section>
+            <section class="map-section">
+                <h2>Как нас найти</h2>
+                <iframe id="map_766984555" frameborder="0" width="100%" height="600px" src="https://makemap.2gis.ru/widget?data=eJzFkUFLwzAUx7_L8xpGmiZp06ugCIIDDwNHD7V9bsG2KWkGztLvbtY2czAP4sWckv8L7_1-vAGMrdBidY-mQWc19pBtB3DHDiGDOyzcwSIQ6Kzp0LqpPkCFfWl157Rp_S9f7p0173hramN9cMOr14SJc77RldtDxsL7qStK7Y6QRQQ-H9oKP_x1JLCbIY6nEQvBo27x2XO1O9-tNJ5Wt4WbKLexWiWRoEwRwVeSqljKnMwpVypZUpFEIRVSsiVVNMpzP1JXfjSldCT_Ic3-LC2jIM3Tb-lEBOmYhzRWjIeUsQvplP9C2mlX46x75V8Gc8rS6I3BxTJpOD8Lro1u3ZXboibO6wysivMxJ9AU3dr0egYYoC4cZKevEZWCSU6ZTOKUQH0qT70kSzlLfEeuuIczpvFo0jf1IqauN3vE-mVKnT3g-AW3-ux0" sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
+            </section>
+        </div>
+        <section class="form-section">
+            <h2>Напишите нам</h2>
+            
+            <form id="contact-form">
+                <label for="cf-name">Ваше имя:</label>
+                <input type="text" id="cf-name" name="name"
+                    required
+                    minlength="2"
+                    maxlength="50"
+                    placeholder="Иван">
+
+                <label for="cf-email">E-mail:</label>
+                <input type="text" id="cf-email" name="email"
+                required
+                placeholder="ivan@example.ru">
+
+                <label for="cf-message">Сообщение:</label>
+                <textarea  id="cf-message" name="message" rows="4"
+                    required
+                    minlength="10"
+                    placeholder="Ваш вопрос(минимум 10 символов)"></textarea>
+                
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+            <p id="message" aria-live="polite"></p>
+        </section>
 </body>
 </html>

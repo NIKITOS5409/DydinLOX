@@ -68,3 +68,31 @@ nav a {
     background-color: rgb(107, 7, 86);
     color: rgb(243, 62, 162);
 }
+
+/* Контакты */
+
+.site-content {
+    margin: 0 auto;
+    padding: 2.5% 4%;
+}
+
+.contacts-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contacts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.contact-icon {
+    width: 12%;
+}
+
+.open {
+    color: rgb(4, 184, 94);
+}
+
+.close {
+    color: brown;
+}
